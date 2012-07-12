@@ -1,0 +1,7 @@
+z80-cpu is A general purpose implementation of the ZiLOG Z80 microprocessor core.
+
+This core accurately emulates all valid op-codes while attempting to cover all undocumented features. 
+
+Complete documentation is available at its project page
+
+http://code.google.com/p/z80-cpu/
