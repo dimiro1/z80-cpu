@@ -4,7 +4,7 @@
 
 	<groupId>net.sleepymouse</groupId>
 	<artifactId>Z80CPU</artifactId>
-	<version>0.1</version>
+	<version>0.2</version>
 	<packaging>jar</packaging>
 	<name>Z80 CPU</name>
 
@@ -54,7 +54,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<!-- MANIFEST -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -65,9 +65,12 @@
 						<index>true</index>
 						<manifest>
 							<addClasspath>true</addClasspath>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 						</manifest>
 						<manifestEntries>
 							<mode>development</mode>
+							<Built-By>The Unorthadox Engineer</Built-By>
 						</manifestEntries>
 					</archive>
 				</configuration>
