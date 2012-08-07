@@ -1,3 +1,7 @@
 #sidebar TableOfContents
 
-= Undocumented Instructions =
+=*Undocumented Instructions*=
+
+A list of all the undocumented instructions supported by the emulator. These are not guaranteed to exist in every processo rbut they where common enough to be used in real software.
+
+ 
