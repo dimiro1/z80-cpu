@@ -7940,7 +7940,7 @@ public class Z80Core implements ICPUData
 	private void INI()
 	{
 		ram.writeByte(getHL(), io.IORead(reg_C));
-		reg_B = (reg_B--) & lsb;
+		reg_B = (reg_B - 1) & lsb;
 		setHL(ALU16BitInc(getHL()));
 		setZ(reg_B == 0);
 		setN();
@@ -7957,7 +7957,7 @@ public class Z80Core implements ICPUData
 	private void IND()
 	{
 		ram.writeByte(getHL(), io.IORead(reg_C));
-		reg_B = (reg_B--) & lsb;
+		reg_B = (reg_B - 1) & lsb;
 		setHL(ALU16BitDec(getHL()));
 		setZ(reg_B == 0);
 		setN();
@@ -7975,7 +7975,7 @@ public class Z80Core implements ICPUData
 	{
 		io.IOWrite(reg_C, ram.readByte(getHL()));
 		reg_R++;
-		reg_B = (reg_B--) & lsb;
+		reg_B = (reg_B - 1) & lsb;
 		setHL(ALU16BitInc(getHL()));
 		setZ(reg_B == 0);
 		setN();
@@ -7993,7 +7993,7 @@ public class Z80Core implements ICPUData
 	{
 		io.IOWrite(reg_C, ram.readByte(getHL()));
 		reg_R++;
-		reg_B = (reg_B--) & lsb;
+		reg_B = (reg_B - 1) & lsb;
 		setHL(ALU16BitDec(getHL()));
 		setZ(reg_B == 0);
 		setN();
