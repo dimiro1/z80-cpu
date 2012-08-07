@@ -23,9 +23,76 @@ import net.sleepymouse.microprocessor.*;
  */
 public class Z80Core implements ICPUData
 {
+	/**
+	 * All supported processor registers which can be accessed externally to the core
+	 * 
+	 */
 	public enum RegisterNames
 	{
-		BC, DE, HL, BC_ALT, DE_ALT, HL_ALT, IX, IY, SP, PC, A, F, A_ALT, F_ALT
+		/**
+		 * 16 bit BC register pair
+		 */
+		BC,
+		/**
+		 * 16 bit DE register pair
+		 */
+		DE,
+		/**
+		 * 16 bit HL register pair
+		 */
+		HL,
+		/**
+		 * Alternate register file 16 bit BC register pair
+		 */
+		BC_ALT,
+		/**
+		 * Alternate register file 16 bit DE register pair
+		 */
+		DE_ALT,
+		/**
+		 * Alternate register file 16 bit HL register pair
+		 */
+		HL_ALT,
+		/**
+		 * IX 16 bit index registerr
+		 */
+		IX,
+		/**
+		 * IY 16 bit index register
+		 */
+		IY,
+		/**
+		 * Stack pointer
+		 */
+		SP,
+		/**
+		 * Program counter
+		 */
+		PC,
+		/**
+		 * 8 bit accumulator
+		 */
+		A,
+		/**
+		 * 8 bit flag register
+		 */
+		F,
+		/**
+		 * Alternate 8 bit accumulator
+		 */
+		A_ALT,
+		/**
+		 * Alternate 8 bit flag register
+		 */
+		F_ALT,
+		/**
+		 * 8 bit interrupt register
+		 */
+		I,
+		/**
+		 * 7 bit refresh register
+		 */
+		R
 	};
 
 	private IMemory					ram;
@@ -377,8 +444,13 @@ public class Z80Core implements ICPUData
 				return reg_A_ALT;
 			case F_ALT:
 				return reg_F_ALT;
+			case I:
+				return reg_I;
+			case R:
+				return reg_R;
+			default:
+				return -1;
 		}
-		return -1;
 	}
 
 	/**
