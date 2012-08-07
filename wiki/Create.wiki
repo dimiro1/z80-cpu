@@ -1,7 +1,5 @@
 #sidebar TableOfContents
 
-=*Undocumented Instructions*=
+=*Create A Machine*=
 
-How to create a simple machine and execute an instruction.  After that, teh rest is up to you !
-
-
+How to create a simple machine and execute an instruction.  After that, the rest is up to you !
