@@ -1,3 +1,5 @@
+#sidebar TableOfContents
+
 =*Z80 Microprocessor Java Emulation*=
 
 A general purpose implementation of the ZiLOG Z80 microprocessor core in Java.  This core accurately emulates all valid op-codes while attempting to cover all undocumented features.
