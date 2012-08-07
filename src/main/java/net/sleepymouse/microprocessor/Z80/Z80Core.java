@@ -17,6 +17,10 @@ package net.sleepymouse.microprocessor.Z80;
 
 import net.sleepymouse.microprocessor.*;
 
+/**
+ * The ZiLOG Z80 processor core
+ * 
+ */
 public class Z80Core implements ICPUData
 {
 	public enum RegisterNames

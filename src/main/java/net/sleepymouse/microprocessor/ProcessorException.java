@@ -14,6 +14,10 @@
  */
 package net.sleepymouse.microprocessor;
 
+/**
+ * Exception thrown under various CPU states that may need exception processing
+ * 
+ */
 public class ProcessorException extends Exception
 {
 
