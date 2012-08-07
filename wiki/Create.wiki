@@ -1,3 +1,7 @@
 #sidebar TableOfContents
 
-= Introduction =
+=*Undocumented Instructions*=
+
+How to create a simple machine and execute an instruction.  After that, teh rest is up to you !
+
+
