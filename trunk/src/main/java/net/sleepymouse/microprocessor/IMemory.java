@@ -14,6 +14,10 @@
  */
 package net.sleepymouse.microprocessor;
 
+/**
+ * Interface to describe the memory processor bus
+ * 
+ */
 public interface IMemory
 {
 

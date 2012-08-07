@@ -14,6 +14,10 @@
  */
 package net.sleepymouse.microprocessor;
 
+/**
+ * Interface to the processor
+ * 
+ */
 public interface ICPU
 {
 

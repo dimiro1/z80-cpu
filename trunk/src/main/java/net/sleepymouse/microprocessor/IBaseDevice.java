@@ -14,9 +14,12 @@
  */
 package net.sleepymouse.microprocessor;
 
+/**
+ * Interface to describe the I/O processor bus
+ * 
+ */
 public interface IBaseDevice
 {
-
 	/**
 	 * Read data from an I/O port
 	 * 
