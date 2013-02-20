@@ -2,6 +2,8 @@
 
 =*Create A Machine*=
 
+{{{
+
 How to create a simple machine and execute an instruction.  After that, the rest is up to you !
 
 Lets Implement …
@@ -124,5 +126,7 @@ public class Z80Demo
         }
     }
 }
+
+}}}
 
 Well, wasn’t that simple ? I leave it as an exercise to the reader to put together that uber S-100 CP/M-80 system that you always wanted but you (your parents ?) could not afford.
