@@ -1,0 +1,10 @@
+=Release Note for 3.0.1=
+
+== Changes ==
+
+
+  # Fix for HALT followed by NMI issue
+  # Additional undocumented instructions.
+  # Minor performance improvements
+  # Code tidy up
+
