@@ -4,7 +4,7 @@
 
 	<groupId>net.sleepymouse</groupId>
 	<artifactId>Z80CPU</artifactId>
-	<version>0.3</version>
+	<version>3.0.1</version>
 	<packaging>jar</packaging>
 	<name>Z80 CPU</name>
 
@@ -24,8 +24,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.5.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<optimize>true</optimize>
 					<verbose>true</verbose>
 				</configuration>

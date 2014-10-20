@@ -470,7 +470,6 @@ public class Z80Core implements ICPUData
 	public void executeOneInstruction() throws ProcessorException
 	{
 		//
-		halt = false;
 		// NMI check first
 		if (NMI_FF)
 		{
@@ -484,11 +483,15 @@ public class Z80Core implements ICPUData
 				NMI_FF = false; // interrupt accepted
 				IFF2 = IFF1; // store IFF state
 				dec2SP();
-				incPC(); // Was a bug ! - point to instruction after(!) interrupt location
+				if (halt)
+				{
+					incPC(); // Was a bug ! - point to instruction after(!) interrupt location. HALT decrements PC !!!
+				}
 				ram.writeWord(reg_SP, reg_PC);
 				reg_PC = 0x0066; // NMI routine location
 			}
 		}
+		halt = false;
 		instruction = ram.readByte(reg_PC);
 		incPC();
 		try
@@ -8502,7 +8505,7 @@ public class Z80Core implements ICPUData
 	 */
 	public String getPatchVersion()
 	{
-		return "0";
+		return "1";
 	}
 
 	/**
