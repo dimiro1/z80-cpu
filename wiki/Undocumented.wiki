@@ -4,6 +4,8 @@
 
 A list of all the undocumented instructions supported by the emulator. These are not guaranteed to exist in every processor but they where common enough to be used in real software.
 
+
+{{{
   #DD #24      INC  IXH           #FD #24       INC  IYH
   #DD #25      DEC  IXH           #FD #25       DEC  IYH
   #DD #26 nn   LD   IXH,nn        #FD #26 nn    LD   IYH,nn
@@ -94,4 +96,6 @@ A list of all the undocumented instructions supported by the emulator. These are
   #CB #37          SLL  A
 
   #ED #70          IN   F,(C)                               
-  #ED #71          OUT  F,(C)                               
+  #ED #71          OUT  F,(C) 
+
+}}}                              
