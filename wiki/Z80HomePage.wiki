@@ -8,7 +8,7 @@ The emulator features:
 
  * All standard instructions
  * All flags, including unused bits
- * All undocumented instructions I can find including IX / IY as HL, missing shifts, bit twiddling [Recently expanded]
+ * All undocumented instructions I can find including IX / IY as HL, missing shifts, bit twiddling (Expanded in 3.0.1)
  * Accurate T state timings
  * Simulated R register
  * IFF1 and IFF2 handling
