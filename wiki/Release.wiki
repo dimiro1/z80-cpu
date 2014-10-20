@@ -8,3 +8,4 @@
   # Minor performance improvements
   # Code tidy up
 
+Please note that downloads are no longer available due to a plocy change by Google.
