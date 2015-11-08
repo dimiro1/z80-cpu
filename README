@@ -1,3 +1,5 @@
+# THIS IS A FORK OF THE PROJECT ON GOOGLE CODE
+
 z80-cpu is A general purpose implementation of the ZiLOG Z80 microprocessor core.
 
 This core accurately emulates all valid op-codes while attempting to cover all undocumented features. 
